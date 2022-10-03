@@ -200,9 +200,9 @@ class TipWindow(BaseWidget):
         if self.isVisible():
             return
         if setting.use_dark_skin:
-            self.color_background = QColor(50, 50, 50, 0.8*255)
+            self.color_background = QColor(50, 50, 50, int(0.8*255))
         else:
-            self.color_background = QColor(200, 200, 200, 0.8*255)
+            self.color_background = QColor(200, 200, 200, int(0.8*255))
         if pos is None:
             pos = QCursor.pos()
         self.move(pos)
